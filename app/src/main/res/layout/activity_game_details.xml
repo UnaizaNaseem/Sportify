@@ -26,17 +26,11 @@
                 app:srcCompat="@drawable/mad"
                 android:gravity="center_vertical|center_horizontal"
                 android:layout_weight="1" />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="user"
-            android:layout_marginRight="-0dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="50dp"
@@ -47,7 +41,46 @@
                 android:text="Game Name"
                 android:gravity="center_vertical"/>
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <Button
+                android:id="@+id/Upcoming"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upcoming"
+                android:layout_weight=".33"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"/>
+            <Button
+                android:id="@+id/Past"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Past"
+                android:layout_weight=".33"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"/>
+            <Button
+                android:id="@+id/Standings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Standings"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-
+            <androidx.fragment.app.FragmentContainerView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/fragmentContanier"
+                android:name="com.example.sportify.GameDetailsUpcoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
