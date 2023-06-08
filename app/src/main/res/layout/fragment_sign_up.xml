@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_marginTop="-130dp"
+    android:background="@color/white"
+    tools:context=".SignUpFragment">
+
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="@color/light_grey"
+            android:textColorHint="@color/light_grey"
+            android:hint="First name"
+            android:inputType="textPersonName"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/lname"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:backgroundTint="@color/light_grey"
+            android:textColorHint="@color/light_grey"
+            android:hint="Last name"
+            android:inputType="textPersonName"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/mail"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:backgroundTint="@color/light_grey"
+            android:textColorHint="@color/light_grey"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:backgroundTint="@color/light_grey"
+            android:textColorHint="@color/light_grey"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/rePassword"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:backgroundTint="@color/light_grey"
+            android:textColorHint="@color/light_grey"
+            android:hint="Re-enter Password"
+            android:inputType="textPassword"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="17dp"
+            android:backgroundTint="@color/dark_teal"
+            android:text="SignUp"
+            android:textColor="@color/white"
+            app:cornerRadius="40dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/mad" />
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btn_sign_in"
         android:layout_width="334dp"
         android:layout_height="58dp"
         android:backgroundTint="@color/dark_teal"
@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.498" />
 
     <Button
-        android:id="@+id/btn_login2"
+        android:id="@+id/btn_login"
         android:layout_width="332dp"
         android:layout_height="53dp"
         android:backgroundTint="@color/white"
@@ -49,7 +49,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sign_in"
         app:layout_constraintVertical_bias="0.133"
         app:strokeColor="#185284"
         app:strokeWidth="1dp" />

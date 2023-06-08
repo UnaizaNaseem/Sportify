@@ -13,6 +13,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         textView = findViewById(R.id.textView);
+        Button Login = (Button)findViewById(R.id.btn_login);
+        Button SignUp= (Button)findViewById(R.id.btn_sign_in);
+        Login.setOnClickListener(this::onClick);
+        SignUp.setOnClickListener(this::onClick);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -21,4 +25,24 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void onClick(View v) {
+        if(v.getId() == R.id.btn_login)
+        {
+            String str = "Login";
+            Intent intent=new Intent(MainActivity.this,Registration.class);
+            intent.putExtra("KEY",str);
+            startActivity(intent);
+        }
+        else if (v.getId() == R.id.btn_sign_in)
+        {
+            String str = "SignUp";
+            Intent intent=new Intent(MainActivity.this,Registration.class);
+            intent.putExtra("KEY",str);
+            startActivity(intent);
+        }
+
+    }
+
+
 }
