@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="15dp"
-    tools:context=".GameDetailsPast">
+    tools:context=".GameDetailsPast"
+    android:background="@color/white">
 
 
     <LinearLayout
