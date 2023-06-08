@@ -2,34 +2,34 @@ package com.example.sportify;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
-public class home extends FirstScreen {
-    TextView textView;
-    Button button;
+public class HomeScreen extends home{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home);
-        textView = findViewById(R.id.skipText);
-        button = findViewById(R.id.next);
-        textView.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.main_home);
+
+        ImageView menuIcon = findViewById(R.id.menuIcon);
+        TextView seeAll = findViewById(R.id.seeNHL);
+        menuIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
+                Intent intent = new Intent(getApplicationContext(), home.class);
                 startActivity(intent);
             }
         });
 
-        button.setOnClickListener(new View.OnClickListener() {
+        seeAll.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
+                Intent intent = new Intent(getApplicationContext(), GameDetails.class);
                 startActivity(intent);
             }
         });
+
+
     }
 }
-

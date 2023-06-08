@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.widget.Button;
 import android.view.View;
 import android.widget.TextView;
-public class MainActivity extends AppCompatActivity {
+public class FirstScreen extends AppCompatActivity {
     TextView textView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,14 +30,14 @@ public class MainActivity extends AppCompatActivity {
         if(v.getId() == R.id.btn_login)
         {
             String str = "Login";
-            Intent intent=new Intent(MainActivity.this,Registration.class);
+            Intent intent=new Intent(FirstScreen.this,Registration.class);
             intent.putExtra("KEY",str);
             startActivity(intent);
         }
         else if (v.getId() == R.id.btn_sign_in)
         {
             String str = "SignUp";
-            Intent intent=new Intent(MainActivity.this,Registration.class);
+            Intent intent=new Intent(FirstScreen.this,Registration.class);
             intent.putExtra("KEY",str);
             startActivity(intent);
         }
