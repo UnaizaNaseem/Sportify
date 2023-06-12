@@ -1,0 +1,867 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true">
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.navigation.NavigationView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <include
+        android:id="@+id/include"
+        layout="@layout/header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="723dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="@android:dimen/notification_large_icon_height"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:id="@+id/scroll"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linear"
+            android:paddingBottom="85dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grey_bg">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageNHL"
+                        android:layout_width="65dp"
+                        android:layout_height="55dp"
+                        app:srcCompat="@drawable/nhl" />
+
+                    <TextView
+                        android:id="@+id/nhltext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="NHL"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/seeNHL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:clickable="true"
+                    android:text="See All"
+                    android:textColor="#E6195285"
+                    android:textSize="15.5sp" />
+
+                <View
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="70dp"
+                    android:background="#682E2D2D" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="90dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/team1img"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/stars" />
+
+                    <TextView
+                        android:id="@+id/team1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:text="Stars"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="130dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/team2img"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/kraken" />
+
+                    <TextView
+                        android:id="@+id/team2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:text="Kraken"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginRight="125dp"
+                    android:background="#682E2D2D" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="51dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="end"
+                    android:text="Sun, 14/05 4:00 am"
+                    android:textColor="@color/text_grey"
+                    android:textSize="15sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grey_bg">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgEPL"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/premier" />
+
+                    <TextView
+                        android:id="@+id/epltext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="EPL"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/seeEPL"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:clickable="true"
+                    android:text="See All"
+                    android:textColor="#E6195285"
+                    android:textSize="15.5sp" />
+
+                <View
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="70dp"
+                    android:background="#682E2D2D" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="90dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/team1imgepl"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/brentford" />
+
+                    <TextView
+                        android:id="@+id/team1epl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:text="Brentford"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="130dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/team2imgepl"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/westham" />
+
+                    <TextView
+                        android:id="@+id/team2epl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:text="West Ham"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginRight="125dp"
+                    android:background="#682E2D2D" />
+
+                <TextView
+                    android:id="@+id/dateepl"
+                    android:layout_width="51dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="end"
+                    android:text="Mon, 14/05 4:00 am"
+                    android:textColor="@color/text_grey"
+                    android:textSize="15sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grey_bg">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgf1"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/f1" />
+
+                    <TextView
+                        android:id="@+id/f1text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Formula 1"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/seef1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:clickable="true"
+                    android:text="See All"
+                    android:textColor="@color/link_blue"
+                    android:textSize="15.5sp" />
+
+                <View
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="70dp"
+                    android:background="#682E2D2D" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="90dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/race"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Round 6: Italy"
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/racedetail"
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:text="Qatar Airways Emilia Romagna Grand Prix"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginRight="125dp"
+                    android:background="#682E2D2D" />
+
+                <TextView
+                    android:id="@+id/datef1"
+                    android:layout_width="51dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="end"
+                    android:text="Sun, 14/05 10:00 pm"
+                    android:textColor="@color/text_grey"
+                    android:textSize="15sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grey_bg">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgicc"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/cricket" />
+
+                    <TextView
+                        android:id="@+id/icctext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="ICC"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/seeicc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:clickable="true"
+                    android:text="See All"
+                    android:textColor="#E6195285"
+                    android:textSize="15.5sp" />
+
+                <View
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="70dp"
+                    android:background="#682E2D2D" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="90dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/team1imgicc"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/aus" />
+
+                    <TextView
+                        android:id="@+id/team1icc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:text="Australia"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="130dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/team2imgicc"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/india" />
+
+                    <TextView
+                        android:id="@+id/team2icc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:text="India"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginRight="125dp"
+                    android:background="#682E2D2D" />
+
+                <TextView
+                    android:id="@+id/dateicc"
+                    android:layout_width="51dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="end"
+                    android:text="Mon, 14/05 4:00 am"
+                    android:textColor="@color/text_grey"
+                    android:textSize="15sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grey_bg">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgnba"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/nba" />
+
+                    <TextView
+                        android:id="@+id/nbatext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="NBA"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/seenba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:clickable="true"
+                    android:text="See All"
+                    android:textColor="#E6195285"
+                    android:textSize="15.5sp" />
+
+                <View
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="70dp"
+                    android:background="#682E2D2D" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="90dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/team1imgnba"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/denvernba" />
+
+                    <TextView
+                        android:id="@+id/team1nba"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:text="Denver Nuggets"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="130dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/team2imgnba"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/miaminba" />
+
+                    <TextView
+                        android:id="@+id/team2nba"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:text="Miami Heat"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginRight="125dp"
+                    android:background="#682E2D2D" />
+
+                <TextView
+                    android:id="@+id/datenba"
+                    android:layout_width="51dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="end"
+                    android:text="Mon, 14/05 4:00 am"
+                    android:textColor="@color/text_grey"
+                    android:textSize="15sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/grey_bg">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imgnfl"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/nfl" />
+
+                    <TextView
+                        android:id="@+id/nfltext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="NFL"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/seenfl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:clickable="true"
+                    android:text="See All"
+                    android:textColor="#E6195285"
+                    android:textSize="15.5sp" />
+
+                <View
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="70dp"
+                    android:background="#682E2D2D" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="90dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/team1imgnfl"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/browns" />
+
+                    <TextView
+                        android:id="@+id/team1nfl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:text="Browns"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="130dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/team2nflimg"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/jets" />
+
+                    <TextView
+                        android:id="@+id/team2nfl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:text="Jets"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginRight="125dp"
+                    android:background="#682E2D2D" />
+
+                <TextView
+                    android:id="@+id/datenfl"
+                    android:layout_width="51dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="end"
+                    android:text="Mon, 14/05 4:00 am"
+                    android:textColor="@color/text_grey"
+                    android:textSize="15sp" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:backgroundTint="@color/grey_bg">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imguefa"
+                        android:layout_width="70dp"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/uefa" />
+
+                    <TextView
+                        android:id="@+id/uefatext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Champions League"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/seeuefa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:clickable="true"
+                    android:text="See All"
+                    android:textColor="#E6195285"
+                    android:textSize="15.5sp" />
+
+                <View
+                    android:layout_width="280dp"
+                    android:layout_height="2dp"
+                    android:layout_marginLeft="85dp"
+                    android:layout_marginTop="70dp"
+                    android:background="#682E2D2D" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="90dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/team1imguefa"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/mancity" />
+
+                    <TextView
+                        android:id="@+id/team1uefa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:text="Man City"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="130dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/team2imguefa"
+                        android:layout_width="45dp"
+                        android:layout_height="35dp"
+                        app:srcCompat="@drawable/intermilan" />
+
+                    <TextView
+                        android:id="@+id/team2uefa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:text="Inter Milan"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginRight="125dp"
+                    android:background="#682E2D2D" />
+
+                <TextView
+                    android:id="@+id/dateuefa"
+                    android:layout_width="51dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="40dp"
+                    android:gravity="end"
+                    android:text="Sun, 11/06 4:00 am"
+                    android:textColor="@color/text_grey"
+                    android:textSize="15sp" />
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
