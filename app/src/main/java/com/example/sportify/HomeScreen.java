@@ -25,17 +25,21 @@ public class HomeScreen extends toolbar {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_screen);
         TextView seeAll = findViewById(R.id.seeNHL);
+        TextView seeAll2 = findViewById(R.id.seeEPL);
         navigationView=findViewById(R.id.nav_view);
         scrollView=findViewById(R.id.scroll);
+
         linearLayout=findViewById(R.id.linear);
         imagebutton=findViewById(R.id.menu_button);
         navigationView.setVisibility(View.INVISIBLE);
         linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                if (navigationView.getVisibility()==View.VISIBLE){
                 Animation animation= AnimationUtils.loadAnimation(HomeScreen.this,R.anim.slide);
                 navigationView.startAnimation(animation);
                 navigationView.setVisibility(View.INVISIBLE);
+                }
             }
         });
         imagebutton.setOnClickListener(new View.OnClickListener(){
@@ -51,7 +55,13 @@ public class HomeScreen extends toolbar {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), GameDetails.class);
                 startActivity(intent);
-
+            }
+        });
+        seeAll2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), NewsScreen.class);
+                startActivity(intent);
             }
         });
     }

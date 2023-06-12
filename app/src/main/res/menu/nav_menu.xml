@@ -5,7 +5,9 @@
     android:background="@color/white"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:checkableBehavior="single"
+        android:background="@color/white">
         <item
             android:id="@+id/button1"
             android:layout_width="match_parent"

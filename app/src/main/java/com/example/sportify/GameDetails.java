@@ -11,9 +11,21 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 
-public class GameDetails extends AppCompatActivity {
+import com.google.android.material.navigation.NavigationView;
+
+public class GameDetails extends toolbar {
+    NavigationView navigationView;
+    ScrollView scrollView;
+
+    LinearLayout linearLayout;
+    ImageButton imagebutton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +40,31 @@ public class GameDetails extends AppCompatActivity {
         standings.setOnClickListener(this::onClick);
 
         selectFragment("Upcoming");
+        navigationView=findViewById(R.id.nav_view);
+        scrollView=findViewById(R.id.scroll);
+
+        linearLayout=findViewById(R.id.linear);
+        imagebutton=findViewById(R.id.menu_button);
+        navigationView.setVisibility(View.INVISIBLE);
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (navigationView.getVisibility()==View.VISIBLE){
+                Animation animation= AnimationUtils.loadAnimation(GameDetails.this,R.anim.slide);
+                navigationView.startAnimation(animation);
+                navigationView.setVisibility(View.INVISIBLE);
+                }
+            }
+        });
+        imagebutton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                Animation animation= AnimationUtils.loadAnimation(GameDetails.this,R.anim.slide2);
+                navigationView.startAnimation(animation);
+                navigationView.setVisibility(View.VISIBLE);
+            }
+        });
+
     }
 
     public void onClick(View v) {
