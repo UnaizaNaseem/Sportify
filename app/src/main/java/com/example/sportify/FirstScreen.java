@@ -20,7 +20,7 @@ public class FirstScreen extends AppCompatActivity {
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), home.class);
+                Intent intent = new Intent(getApplicationContext(), LeagueSelection.class);
                 startActivity(intent);
             }
         });

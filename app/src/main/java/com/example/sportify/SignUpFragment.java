@@ -67,7 +67,7 @@ public class SignUpFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(getActivity(), HomeScreen.class);
+                Intent i = new Intent(getActivity(), LeagueSelection.class);
                 startActivity(i);
                 getActivity().finish();
             }

@@ -12,13 +12,20 @@
         android:theme="@style/Theme.Sportify"
         tools:targetApi="31" >
         <activity
+            android:name=".HomeScreen"
+            android:exported="false" />
+        <activity
+            android:name=".toolbar"
+            android:exported="false" />
+        <activity
+            android:name=".LeagueSelection"
+            android:exported="false" />
+        <activity
             android:name=".Registration"
             android:exported="false" />
         <activity
             android:name=".GameDetails"
             android:exported="false" />
-        <activity android:name=".home" />
-        <activity android:name=".HomeScreen" />
         <activity
             android:name=".FirstScreen"
             android:exported="true" >
