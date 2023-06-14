@@ -5,7 +5,9 @@
     android:background="@color/white"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group
+        android:checkableBehavior="single"
+        android:background="@color/white">
         <item
             android:id="@+id/button1"
             android:layout_width="match_parent"
@@ -22,20 +24,21 @@
             android:textStyle="bold"
             android:title="Home" />
         <item
-            android:id="@+id/button2"
+            android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/button_background"
             android:drawablePadding="8dp"
-            android:icon="@drawable/ic_cri"
+            android:icon="@drawable/ic_hockey"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:textAlignment="viewStart"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:title="Cricket" />
+            android:title="NHL"></item>
+
         <item
             android:id="@+id/button3"
             android:layout_width="match_parent"
@@ -43,7 +46,7 @@
             android:layout_marginBottom="8dp"
             android:background="@drawable/button_background"
             android:drawablePadding="8dp"
-            android:icon="@drawable/ic_football"
+            android:icon="@drawable/soccer"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:textAlignment="viewStart"
@@ -51,7 +54,6 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:title="EPL" />
-
 
         <item
             android:id="@+id/button5"
@@ -69,20 +71,21 @@
             android:textStyle="bold"
             android:title="Formula 1"></item>
         <item
-            android:id="@+id/button6"
+            android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/button_background"
             android:drawablePadding="8dp"
-            android:icon="@drawable/ic_golf"
+            android:icon="@drawable/ic_cri"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:textAlignment="viewStart"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:title="Golf"></item>
+            android:title="Cricket" />
+
         <item
             android:id="@+id/button7"
             android:layout_width="match_parent"
@@ -98,21 +101,12 @@
             android:textSize="18sp"
             android:textStyle="bold"
             android:title="NBA"></item>
-        <item
-            android:id="@+id/button8"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/button_background"
-            android:drawablePadding="8dp"
-            android:icon="@drawable/ic_hockey"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
-            android:textAlignment="viewStart"
-            android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            android:title="NHL"></item>
+
+
+
+
+
+
         <item
             android:id="@+id/button9"
             android:layout_width="match_parent"
@@ -120,16 +114,48 @@
             android:layout_marginBottom="8dp"
             android:background="@drawable/button_background"
             android:drawablePadding="8dp"
-            android:icon="@drawable/ic_tennis"
+            android:icon="@drawable/footballicon"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:textAlignment="viewStart"
             android:textColor="@color/black"
             android:textSize="18sp"
             android:textStyle="bold"
-            android:title="Tennis">
+            android:title="NFL">
 
         </item>
 
+        <item
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_background"
+            android:drawablePadding="8dp"
+            android:icon="@drawable/soccer"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:title="UEFA"></item>
+        <item
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_background"
+            android:drawablePadding="8dp"
+            android:icon="@drawable/news_icon"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textAlignment="viewStart"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:title="News">
+
+        </item>
     </group>
 </menu>

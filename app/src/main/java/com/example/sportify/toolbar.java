@@ -69,9 +69,8 @@ public class toolbar extends AppCompatActivity {
     private DrawerLayout mDrawer;
     private DrawerLayout toolbar;
     private NavigationView nvDrawer;
-
+    private ActionBarDrawerToggle mDrawerToggle;
     // Make sure to be using androidx.appcompat.app.ActionBarDrawerToggle version.
-    private ActionBarDrawerToggle drawerToggle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,4 +78,5 @@ public class toolbar extends AppCompatActivity {
         setContentView(R.layout.activity_toolbar);
 
     }
+
 }

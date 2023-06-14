@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="15dp"
-    tools:context=".GameDetailsPast"
+    tools:context=".GameDetailsEPLPast"
     android:background="@color/white">
 
 
@@ -21,16 +22,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="7dp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="English Premier League" />
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -55,17 +46,17 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            app:srcCompat="@drawable/masters"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_vertical"
-                            android:layout_margin="15dp" />
+                            android:layout_margin="15dp"
+                            app:srcCompat="@drawable/manu"/>
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
-                            android:text="Masters" />
+                            android:text="Man United" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -75,7 +66,7 @@
                         android:orientation="horizontal">
 
                         <ImageView
-                            app:srcCompat="@drawable/nfl"
+                            app:srcCompat="@drawable/arsenal"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:layout_gravity="center_vertical"
@@ -85,7 +76,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center_vertical"
-                            android:text="NFL" />
+                            android:text="Arsenal" />
                     </LinearLayout>
                 </LinearLayout>
 

@@ -15,7 +15,7 @@
         android:background="@drawable/border"
         android:layout_gravity="center">
         <EditText
-            android:id="@+id/mail"
+            android:id="@+id/logmail"
             android:inputType="textEmailAddress"
             android:hint="Email Address"
             android:layout_width="150dp"
@@ -26,7 +26,7 @@
             android:backgroundTint="@color/light_grey"
             android:textSize="15dp"/>
         <EditText
-            android:id="@+id/password"
+            android:id="@+id/logpassword"
             android:inputType="textPassword"
             android:hint="Password"
             android:textColorHint="@color/light_grey"

@@ -4,24 +4,52 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GameDetails"
-    android:background="@color/white">
+    tools:context=".GameDetailsEPL"
 
+    android:background="@color/white">
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        tools:ignore="MissingConstraints">
+    </com.google.android.material.navigation.NavigationView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:id="@+id/linear"
         android:orientation="vertical">
         <include
             android:id="@+id/include"
-            layout="@layout/activity_toolbar" />
-        <include
-            android:id="@+id/include"
             layout="@layout/header" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:src="@drawable/epl"/>
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EPL"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:layout_marginLeft="10dp"
+                ></TextView>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+
             android:padding="10dp">
             <Button
                 android:id="@+id/Upcoming"
@@ -55,7 +83,7 @@
             <androidx.fragment.app.FragmentContainerView
                 xmlns:android="http://schemas.android.com/apk/res/android"
                 android:id="@+id/fragmentContanier"
-                android:name="com.example.sportify.GameDetailsUpcoming"
+                android:name="com.example.sportify.GameDetailsEPLUpcoming"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>

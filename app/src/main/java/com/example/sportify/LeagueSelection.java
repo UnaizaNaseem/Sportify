@@ -47,7 +47,7 @@ private SportAdapter adapter;
 
 
         sportsList = new ArrayList<>();
-        sportsList.add(new Sport("Football", R.drawable.football));
+        sportsList.add(new Sport("Football", R.drawable.footballicon));
         sportsList.add(new Sport("NBA", R.drawable.nba));
         sportsList.add(new Sport("Tennis", R.drawable.tennis));
         sportsList.add(new Sport("Cricket", R.drawable.cricket));
