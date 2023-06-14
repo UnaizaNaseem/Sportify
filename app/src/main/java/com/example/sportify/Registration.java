@@ -16,8 +16,6 @@ public class Registration extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registration);
 
-
-
         Button signup=(Button) findViewById(R.id.SignUp);
         Button login=(Button) findViewById(R.id.Login);
 
@@ -41,7 +39,8 @@ public class Registration extends AppCompatActivity {
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
             transaction.replace(R.id.fragment_container_view, new SignUpFragment());
             transaction.commit();
-        } else if (str.equals("Login")) {
+        }
+        else if (str.equals("Login")) {
             login.setBackgroundColor(android.graphics.Color.parseColor("#045961"));
             login.setTextColor(Color.WHITE);
             signup.setBackgroundColor(Color.WHITE);

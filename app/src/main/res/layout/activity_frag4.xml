@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".frag4">
-<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    tools:context=".NewsScreen"
     android:background="@color/white">
-
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -22,13 +19,6 @@
             android:padding="20dp">
 
 
-<!--            <ImageView-->
-<!--                android:id="@+id/sportifyIcon"-->
-<!--                android:layout_width="254dp"-->
-<!--                android:layout_height="49dp"-->
-<!--                android:layout_marginLeft="75dp"-->
-<!--                android:layout_marginTop="20dp"-->
-<!--                android:src="@drawable/slogo" />-->
 
         </RelativeLayout>
 
@@ -38,7 +28,6 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         tools:context=".MainActivity">
-
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPager"
@@ -73,11 +62,11 @@
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/textview_background"
                     android:text="Cricket"
                     android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="#3A3838"
+                    android:textSize="22dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -86,15 +75,16 @@
 
                 <Button
                     android:id="@+id/btn_viewall1"
-                    android:layout_width="120dp"
-                    android:layout_height="50dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/view_all_btn"
+                    android:backgroundTint="#F2326762"
+                    android:background="#F2326762"
                     android:text="View all"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="18dp"
-                    android:layout_marginLeft="120dp"
+                    android:layout_marginLeft="70dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -123,11 +113,11 @@
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/textview_background"
                     android:text="Tennis"
                     android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="#3A3838"
+                    android:textSize="22dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -136,15 +126,16 @@
 
                 <Button
                     android:id="@+id/btn_viewall2"
-                    android:layout_width="120dp"
-                    android:layout_height="50dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/view_all_btn"
+                    android:backgroundTint="#F2326762"
+                    android:background="#F2326762"
                     android:text="View all"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="18dp"
-                    android:layout_marginLeft="120dp"
+                    android:layout_marginLeft="70dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -175,11 +166,11 @@
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/textview_background"
                     android:text="NHL"
                     android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="#3A3838"
+                    android:textSize="22dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -188,21 +179,21 @@
 
                 <Button
                     android:id="@+id/btn_viewall3"
-                    android:layout_width="120dp"
-                    android:layout_height="50dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/view_all_btn"
+                    android:backgroundTint="#F2326762"
+                    android:background="#F2326762"
                     android:text="View all"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="18dp"
-                    android:layout_marginLeft="120dp"
+                    android:layout_marginLeft="70dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/Slogo"
-                    />
+                    app:layout_constraintTop_toBottomOf="@+id/Slogo" />
 
 
 
@@ -228,11 +219,11 @@
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/textview_background"
                     android:text="NBA"
                     android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="#3A3838"
+                    android:textSize="22dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -241,15 +232,16 @@
 
                 <Button
                     android:id="@+id/btn_viewall4"
-                    android:layout_width="120dp"
-                    android:layout_height="50dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/view_all_btn"
+                    android:backgroundTint="#F2326762"
+                    android:background="#F2326762"
                     android:text="View all"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="18dp"
-                    android:layout_marginLeft="120dp"
+                    android:layout_marginLeft="70dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -280,11 +272,11 @@
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/textview_background"
-                    android:text="Master"
+                    android:text="Masters"
                     android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="#3A3838"
+                    android:textSize="22dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -293,20 +285,21 @@
 
                 <Button
                     android:id="@+id/btn_viewall5"
-                    android:layout_width="120dp"
-                    android:layout_height="50dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/view_all_btn"
+                    android:backgroundTint="#F2326762"
+                    android:background="#F2326762"
                     android:text="View all"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="18dp"
-                    android:layout_marginLeft="120dp"
+                    android:layout_marginLeft="70dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/Slogo"/>
+                    app:layout_constraintTop_toBottomOf="@+id/Slogo" />
 
 
 
@@ -331,11 +324,11 @@
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/textview_background"
                     android:text="NFL"
                     android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="#3A3838"
+                    android:textSize="22dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -344,15 +337,16 @@
 
                 <Button
                     android:id="@+id/btn_viewall6"
-                    android:layout_width="120dp"
-                    android:layout_height="50dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/view_all_btn"
+                    android:backgroundTint="#F2326762"
+                    android:background="#F2326762"
                     android:text="View all"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="18dp"
-                    android:layout_marginLeft="120dp"
+                    android:layout_marginLeft="70dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -382,11 +376,11 @@
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/textview_background"
                     android:text="Football"
                     android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="#3A3838"
+                    android:textSize="22dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -395,15 +389,16 @@
 
                 <Button
                     android:id="@+id/btn_viewall7"
-                    android:layout_width="120dp"
-                    android:layout_height="50dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/view_all_btn"
+                    android:backgroundTint="#F2326762"
+                    android:background="#F2326762"
                     android:text="View all"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="18dp"
-                    android:layout_marginLeft="120dp"
+                    android:layout_marginLeft="70dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -433,11 +428,11 @@
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/textview_background"
                     android:text="EPL"
                     android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="#3A3838"
+                    android:textSize="22dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -446,15 +441,16 @@
 
                 <Button
                     android:id="@+id/btn_viewall8"
-                    android:layout_width="120dp"
-                    android:layout_height="50dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/view_all_btn"
+                    android:backgroundTint="#F2326762"
+                    android:background="#F2326762"
                     android:text="View all"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="18dp"
-                    android:layout_marginLeft="120dp"
+                    android:layout_marginLeft="70dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -484,11 +480,11 @@
                     android:layout_width="150dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/textview_background"
                     android:text="F1"
                     android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="25dp"
+                    android:layout_gravity="center"
+                    android:textColor="#3A3838"
+                    android:textSize="22dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -497,15 +493,16 @@
 
                 <Button
                     android:id="@+id/btn_viewall9"
-                    android:layout_width="120dp"
-                    android:layout_height="50dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:background="@drawable/view_all_btn"
+                    android:backgroundTint="#F2326762"
+                    android:background="#F2326762"
                     android:text="View all"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="18dp"
-                    android:layout_marginLeft="120dp"
+                    android:layout_marginLeft="70dp"
                     android:textStyle="bold"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
@@ -531,5 +528,5 @@
         </LinearLayout>
 
     </ScrollView>
+
 </LinearLayout>
-</FrameLayout>

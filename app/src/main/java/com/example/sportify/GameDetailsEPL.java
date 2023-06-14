@@ -2,14 +2,13 @@ package com.example.sportify;
 
 import static com.example.sportify.R.*;
 
-import androidx.appcompat.app.AppCompatActivity;
+import androidx.annotation.NonNull;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -20,7 +19,7 @@ import android.widget.ScrollView;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class GameDetails extends toolbar {
+public class GameDetailsEPL extends toolbar {
     NavigationView navigationView;
     ScrollView scrollView;
 
@@ -50,18 +49,63 @@ public class GameDetails extends toolbar {
             @Override
             public void onClick(View view) {
                 if (navigationView.getVisibility()==View.VISIBLE){
-                Animation animation= AnimationUtils.loadAnimation(GameDetails.this,R.anim.slide);
+                Animation animation= AnimationUtils.loadAnimation(GameDetailsEPL.this,R.anim.slide);
                 navigationView.startAnimation(animation);
                 navigationView.setVisibility(View.INVISIBLE);
                 }
             }
         });
-        imagebutton.setOnClickListener(new View.OnClickListener(){
+        imagebutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Animation animation= AnimationUtils.loadAnimation(GameDetails.this,R.anim.slide2);
+                Animation animation = AnimationUtils.loadAnimation(GameDetailsEPL.this, R.anim.slide2);
                 navigationView.startAnimation(animation);
                 navigationView.setVisibility(View.VISIBLE);
+                navigationView.bringToFront();
+                navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+                    @Override
+                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                        if (item.getItemId() == R.id.button1) {
+                            Intent intent = new Intent(getApplicationContext(), HomeScreen.class);
+                            startActivity(intent);
+                        }
+                        else if (item.getItemId() == R.id.button2) {
+                            Intent intent = new Intent(getApplicationContext(), GameDetailsCricket.class);
+                            startActivity(intent);
+                        }
+                        else if (item.getItemId() == R.id.button3) {
+                            Intent intent = new Intent(getApplicationContext(), GameDetailsEPL.class);
+                            startActivity(intent);
+                        }
+
+                        else if (item.getItemId() == R.id.button5) {
+                            Intent intent = new Intent(getApplicationContext(), GameDetailsF1.class);
+                            startActivity(intent);
+                        }
+                        else if (item.getItemId() == R.id.button6) {
+                            Intent intent = new Intent(getApplicationContext(), GameDetailsUEFA.class);
+                            startActivity(intent);
+                        }
+                        else if (item.getItemId() == R.id.button7) {
+                            Intent intent = new Intent(getApplicationContext(), GameDetailsNBA.class);
+                            startActivity(intent);
+                        }
+                        else if (item.getItemId() == R.id.button8) {
+                            Intent intent = new Intent(getApplicationContext(), GameDetailsNHL.class);
+                            startActivity(intent);
+                        }
+                        else if (item.getItemId() == R.id.button9) {
+                            Intent intent = new Intent(getApplicationContext(), GameDetailsNFL.class);
+                            startActivity(intent);
+                        }
+                        else if (item.getItemId() == R.id.button10) {
+                            Intent intent = new Intent(getApplicationContext(),NewsScreen.class);
+                            startActivity(intent);
+                        }
+
+                        return false;
+                    }
+                });
             }
         });
 
@@ -89,7 +133,7 @@ public class GameDetails extends toolbar {
             past.setBackgroundColor(ContextCompat.getColor(this, color.white));
             standings.setBackgroundColor(ContextCompat.getColor(this, color.white));
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            transaction.replace(id.fragmentContanier, new GameDetailsUpcoming());
+            transaction.replace(id.fragmentContanier, new GameDetailsEPLUpcoming());
             transaction.commit();
         }
         else if (str=="Past") {
@@ -98,7 +142,7 @@ public class GameDetails extends toolbar {
             standings.setBackgroundColor(ContextCompat.getColor(this, color.white));
 
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            transaction.replace(id.fragmentContanier, new GameDetailsPast());
+            transaction.replace(id.fragmentContanier, new GameDetailsEPLPast());
             transaction.commit();
         } else if (str=="Standings") {
            standings.setBackgroundColor(ContextCompat.getColor(this, color.teal_700));
@@ -106,7 +150,7 @@ public class GameDetails extends toolbar {
             past.setBackgroundColor(ContextCompat.getColor(this, color.white));
 
             FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-            transaction.replace(id.fragmentContanier, new GameDetailsStandings());
+            transaction.replace(id.fragmentContanier, new GameDetailsEPLStandings());
             transaction.commit();
         }
     }
